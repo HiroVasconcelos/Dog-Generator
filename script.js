@@ -1,12 +1,12 @@
 $(function () {
 
     $("#button").on('click', function () {
-        $("#img-box").empty()
-        $("#img-box").append("<div>loading</div>")
+        $("#box").empty()
+        $("#box").append("<div id=loading-spinner></div>")
         $.get("https://dog.ceo/api/breeds/image/random", function (data) {
-            $("#img-box").empty()
+            $("#box").empty()
             console.log(data)
-            $("#img-box").append("<img src='" + data.message + "'>");
+            $("#box").append("<img src='" + data.message + "'>");
         });
     });
 

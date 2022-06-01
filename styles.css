@@ -24,14 +24,9 @@ body {
     box-shadow: 5px 5px 10px #0000005d;
 }
 
-#img-box {
-    width: 300px;
-    height: 300px;
-}
-
 img {
-    width: 100%;
-    height: 100%;
+    width: 94%;
+    height: 94%;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -85,3 +80,15 @@ img {
   color: rgb(6, 6, 26);
 }
 
+#loading-spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #d97cbd;
+  height: 15%;
+  width: 15%;
+  border-radius: 100%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
