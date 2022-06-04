@@ -13,8 +13,8 @@ body {
 }
 
 #box {
-    width: 315px;
-    height: 315px;
+    height: 0px;
+    width: 0px;
     background-image: linear-gradient(144deg, #b95cfb, #5B42F3 50%,#00DDEB);
     display: flex;
     flex-direction: column;
@@ -78,17 +78,4 @@ img {
 #button:hover span {
   background: none;
   color: rgb(6, 6, 26);
-}
-
-#loading-spinner {
-  border: 8px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #d97cbd;
-  height: 15%;
-  width: 15%;
-  border-radius: 100%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg);}
 }

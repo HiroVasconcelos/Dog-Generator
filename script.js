@@ -1,14 +1,13 @@
 $(function () {
 
     $("#button").on('click', function () {
-        $("#box").empty()
-        $("#box").append("<div id=loading-spinner></div>")
+        $("#box").animate({width: "0px", height: "0px"})
+        $("#box").empty();
         $.get("https://dog.ceo/api/breeds/image/random", function (data) {
-            $("#box").empty()
-            console.log(data)
             $("#box").append("<img src='" + data.message + "'>");
+            $("#box").animate({width: "315px", height: "315px"})
         });
     });
 
 
-}); 
+});
